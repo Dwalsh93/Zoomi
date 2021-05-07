@@ -1,4 +1,11 @@
 // Assignment code here
+var charlength = 0; 
+var lowercase = false;
+var uppercase = false;
+var specialchar = false;
+var numeric = false;
+var nameprompt = prompt("Please enter your name")
+console.log (nameprompt);
 
 
 // Get references to the #generate element
