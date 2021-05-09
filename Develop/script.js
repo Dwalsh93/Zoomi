@@ -26,6 +26,7 @@ function writePassword() {
 
   }
   lowercaseselect = confirm("Would you like to use lowercase letters?");
+  console.log (lowercaseselect)
   if (lowercaseselect) {
     finalpassword += lowercase
   }
@@ -41,20 +42,13 @@ function writePassword() {
   if (numericselect) {
     finalpassword += numeric
   }
-  if (!numericselect && !specialcharselect && !uppercaseselect && !lowercaseselect); {
+  console.log ({lowercaseselect, numericselect, specialcharselect, uppercaseselect})
+  if (!numericselect && !specialcharselect && !uppercaseselect && !lowercaseselect) {
     alert('You must select "confirm" from at least one of the following prompts');
     return charlengthselect();
+
   }
 
-
-  // //array creation temporary 
-  // var results = ""
-  // var posschar = ""
-  // var guarchar = ""
-  
-  // for (var i = 0; i < passwordLength; i++) {
-  //   password += validCharacters.charAt(Math.floor(Math.random() * validCharacters.length));
-  // }
 }
 
 
