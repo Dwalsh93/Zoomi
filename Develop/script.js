@@ -18,10 +18,11 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
   var charlength = prompt("How many characters would you like your password to contain?")
   passwordText.value = password;
+
   if (charlength <= 7 || charlength >= 129) {
     alert("Password length must be between 8-128 characters Try again");
     passLength = parseInt(charlength);
-    return charlength();
+    return charlengthselect();
 
   }
   lowercaseselect = confirm("Would you like to use lowercase letters?");
@@ -40,16 +41,22 @@ function writePassword() {
   if (numericselect) {
     finalpassword += numeric
   }
-  if(numericselect = false){
+  if (!numericselect && !specialcharselect && !uppercaseselect && !lowercaseselect); {
     alert('You must select "confirm" from at least one of the following prompts');
-    writePassword();
+    return charlengthselect();
   }
 
+
+  // //array creation temporary 
+  // var results = ""
+  // var posschar = ""
+  // var guarchar = ""
+  
+  // for (var i = 0; i < passwordLength; i++) {
+  //   password += validCharacters.charAt(Math.floor(Math.random() * validCharacters.length));
+  // }
 }
 
-
-
-// Character length Section End
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
