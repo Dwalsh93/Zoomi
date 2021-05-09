@@ -5,8 +5,8 @@ The goal for this assignment was to develop a random password generator that pro
 overall this project was successful but ultimately something in the code would not allow the final password to appear. 
 
 Screenshot:
-![ScreenShot of Current Active Webpage 1](./assets/images/screenshot-6.png "passgen")
-![ScreenShot of Current Active Webpage 2](./assets/images/screenshot-7.png "passgen")
-![ScreenShot of Current Active Webpage 2](./assets/images/screenshot-8.png "passgen")
-![ScreenShot of Current Active Webpage 2](./assets/images/screenshot-11.png "passgen")
+![ScreenShot of Current Active Webpage 1](.develop/assets/images/screenshot-6.png "passgen")
+![ScreenShot of Current Active Webpage 2](.develop/assets/images/screenshot-7.png "passgen")
+![ScreenShot of Current Active Webpage 2](.develop/assets/images/screenshot-8.png "passgen")
+![ScreenShot of Current Active Webpage 2](.develop/assets/images/screenshot-11.png "passgen")
 Live URL: https://dwalsh93.github.io/Zoomi/
