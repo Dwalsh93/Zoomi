@@ -45,12 +45,11 @@ function writePassword() {
   console.log ({lowercaseselect, numericselect, specialcharselect, uppercaseselect})
   if (!numericselect && !specialcharselect && !uppercaseselect && !lowercaseselect) {
     alert('You must select "confirm" from at least one of the following prompts');
-    return charlengthselect();
+
 
   }
 
 }
-
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
