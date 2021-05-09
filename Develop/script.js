@@ -6,6 +6,7 @@ var lowercase = ["abcdefghijklmnopqrstuvwxyz"];
 var uppercase = ["ABCDEFGHIJKLMNOPQRSTUVWXYZ"];
 var specialchar = ["±!@#$%^&*()_+-=§£™¡¢∞§¶•ªº–≠"];
 var numeric = ["1234567890"];
+var password = "";
 
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
@@ -17,14 +18,16 @@ function writePassword() {
   var passwordText = document.querySelector("#password");
   var charlength = prompt("How many characters would you like your password to contain?")
   passwordText.value = password;
-  if (charlength <= 8 || confirmLength >= 128) {
+  if (charlength <= 7 || charlength >= 129) {
     alert("Password length must be between 8-128 characters Try again");
     passLength = parseInt(charlength);
     return charlength();
 
-  } else{
-
   }
+  lowercaseselect = confirm("Would you like to use lowercase letters?");
+if (lowercaseselect){
+  password += lowercase
+}
 
 }
 
