@@ -8,6 +8,7 @@ var specialchar = ["±!@#$%^&*()_+-=§£™¡¢∞§¶•ªº–≠"];
 var numeric = ["1234567890"];
 var finalpassword = "";
 
+
 // Get references to the #generate element
 var generateBtn = document.querySelector("#generate");
 
@@ -56,23 +57,18 @@ var upperCase = ["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","P"
 var specialChar = ["±","!","@","#","$","%","^","&","*","(",")","_","+","-","=","§","£","™","¡","¢","∞","§","¶","•","ª","º","–","≠"];
 var numeric = ["1","2","3","4","5","6","7","8","9","0"];
 
+var finalpassword = ""
+
 function randomGen() {
-  check();
   var passwordText = document.querySelector("#password");
 
-  var password = "";
+  var finalpassword = "";
   for (var i= 0; i < charlength; i++) {
-    password += password[Math.floor(Math.random() * password.length)];
+    finalpassword += password[Math.floor(Math.random() * password.length)];
   }
   
-  
   passwordText.value = finalpassword;
-
 }
-
-
-// Get references to the #generate element
-var generateBtn = document.querySelector("#generate");
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
